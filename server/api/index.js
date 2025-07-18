@@ -28,6 +28,10 @@ const upload = multer({storage})
 
 const genAI = new GoogleGenerativeAI(process.env.API_KEY)
 
+
+app.get('/', (req, res)=>{
+  res.json('Hello , Backend Working')
+})
 app.post('/upload', upload.single('resume'), async (req, res)=>{
     try{
         const filePath = req.file.path

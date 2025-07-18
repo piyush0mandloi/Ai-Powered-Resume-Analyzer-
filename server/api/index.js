@@ -13,7 +13,8 @@ const PORT=5000
 
 app.use(cors(
   {
-origin: 'https://ai-powered-resume-analyzer.vercel.app', // ✅ Replace with your actual Vercel frontend URL
+// origin: 'https://ai-powered-resume-analyzer.vercel.app', // ✅ Replace with your actual Vercel frontend URL
+origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true  }
 ))

@@ -8,5 +8,18 @@
     "multer": "^2.0.2",
     "openai": "^5.10.1",
     "pdf-parse": "^1.1.1"
-  }
+  },
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "vercel-build": "echo 'No build step needed'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
 }

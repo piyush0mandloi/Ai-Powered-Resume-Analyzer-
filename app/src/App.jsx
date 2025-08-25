@@ -26,6 +26,11 @@ function App() {
         body: formData,
       });
 
+    // const response = await fetch('http://localhost:5000/upload', {
+    // method: 'POST',
+    // body: formData,
+    // });
+
       if (!response.ok) {
         throw new Error('Something went wrong with upload!');
       }
